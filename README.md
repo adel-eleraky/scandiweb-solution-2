@@ -1,0 +1,2 @@
+# scandiweb internship task assignment
+

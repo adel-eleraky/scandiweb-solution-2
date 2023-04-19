@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* small screen */
+@media (min-width: 768px) {
+    .container {
+        width: 760px;
+    }
+}
+/* medium screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+}
+
+/* start header  */
+.header {
+    background-color: #da7171;
+}
+
+.header .container {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .container button {
+    padding: 10px 35px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .container button:hover {
+    background-color: #4e0c0c;
+    color: white;
+}
+/* end header  */
+
+/* start product list  */
+.product-list {
+    margin-top: 50px;
+}
+
+.product-list form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap: 50px;
+    text-align: center;
+}
+
+.product-list .container .product-item {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.product-list .container .product-item:hover {
+    box-shadow: 0px 0px 11px 0px #d37f7f;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+/* end product list  */
+
+/* start add product page  */
+.form {
+    margin-top: 50px;
+}
+
+.form .container {
+    text-align: center;
+}
+
+.form .container form {
+    margin: auto;
+}
+
+.form .container form > div,
+.form .container form .details > div {
+    margin: 20px;
+    position: relative;
+}
+
+.form .container form div  span {
+    position: absolute;
+    bottom: 9px;
+    color: red;
+    padding-left: 20px;
+}
+
+
+.form .container form label {
+    display: inline-block;
+    width: 175px;
+    font-size: 30px;
+}
+
+.form .container form input {
+    padding: 7px 5px;
+}
+
+.form .container form select {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+.form .container form p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* end add product page  */
